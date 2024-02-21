@@ -1,0 +1,24 @@
+# Definindo variáveis
+nome = input("Digite o nome do herói: ")
+xp = int(input("Digite a quantidade de XP do herói: "))
+
+# Estrutura de decisão para classificar o nível do herói
+if xp < 1001:
+    nivel = "Ferro"
+elif xp < 2001:
+    nivel = "Bronze"
+elif xp < 5001:
+    nivel = "Prata"
+elif xp < 7001:
+    nivel = "Ouro"
+elif xp < 8001:
+    nivel = "Platina"
+elif xp < 9001:
+    nivel = "Ascendente"
+elif xp < 10001:
+    nivel = "Imortal"
+else:
+    nivel = "Radiante"
+
+# Exibindo a mensagem final
+print(f"O Herói de nome {nome} está no nível de {nivel}")
